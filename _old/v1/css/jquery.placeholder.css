@@ -1,0 +1,11 @@
+/*--- THE MAGIC ---*/
+/*
+This is the best bit!
+*/
+[placeholder] {
+    cursor: pointer;
+}
+
+[placeholder]:active,[placeholder]:focus {
+    cursor: text;
+}

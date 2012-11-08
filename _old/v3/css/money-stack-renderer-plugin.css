@@ -1,0 +1,71 @@
+.dollar-stack-your {
+    width: 310px;
+    height: 90px;
+    float: left;
+    position: relative;
+    margin-top: -40px;
+}
+
+.dollar-stack-real {
+    margin-left: 30px;
+    margin-top: -25px;
+    width: 310px;
+    height: 90px;
+    float: left;
+    position: relative;
+}
+
+.stack-shadow-0 {
+    left: 7px;
+    bottom: 5px;
+}
+
+.stack-shadow-1 {
+    bottom: 0;
+    left: -20px;
+}
+
+.stack-item {
+    position: absolute;
+    display: block;
+}
+
+.shadow-item-0 {
+    background: url("../img/shadow-item-0.png") no-repeat;
+    width: 249px;
+    height: 83px;
+    position: absolute;
+    bottom: 0;
+}
+
+.shadow-item-1 {
+    background: url("../img/shadow-item-1.png") no-repeat;
+    width: 311px;
+    height: 91px;
+    position: absolute;
+    bottom: 0;
+}
+
+.price-numbers {
+    position: absolute;
+    display: none;
+}
+
+.price-label {
+    font-family: georgia;
+    font-size: 16pt;
+    color: #8F8F8F;
+}
+
+.price-value {
+    font-family: georgia;
+    font-size: 22pt;
+}
+
+.price-value-your {
+    color: #477114;
+}
+
+.price-value-real {
+    color: #265279;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dynamic landing page</title>
+<link rel="stylesheet" type="text/css" href="css/cssreset-min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.ui.autocomplete.smoothness/jquery.ui.autocomplete.smoothness.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.placeholder.css">
+
+<link rel="stylesheet" type="text/css" href="css/money-stack-app.css">
+<link rel="stylesheet" type="text/css" href="css/money-stack-renderer-plugin.css">
+<link rel="stylesheet" type="text/css" href="css/money-stack-autocomplete-grid-plugin.css">
+
+<script type="text/javascript" src="js/jquery-1.7.2_min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.autocomplete.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.validate.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.imgpreload.min.js"></script>
+
+<script type="text/javascript" src="js/money-stack-renderer-plugin.js"></script>
+<script type="text/javascript" src="js/money-stack-autocomplete-grid-plugin.js"></script>
+<script type="text/javascript" src="js/money-stack-app.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="top-light"></div>
+        <div class="form-with-light">
+            <form action="" method="post">
+                <div class="text-container text-container-1">
+                    <input type="text" placeholder="Enter a manufacturer" name="manufacturer" />
+                </div>
+                <div class="text-container text-container-2">
+                    <input type="text" placeholder="Enter a model" name="model" />
+                </div>
+                <div class="text-container text-container-3-4">
+                    <input type="text" placeholder="Year" name="year" maxlength="4" />
+                </div>
+                <div class="text-container text-container-3-4">
+                    <input type="text" placeholder="Price" name="price" maxlength="5" value="48450" />
+                </div>
+                <input class="submit" type="submit" value="" />
+            </form>
+        </div>
+        <div class="ajax-loader"><img src="img/ajax-loader.gif" /></div>
+        <div class="floor-gradient"></div>
+        <div class="bag"></div>
+        <div class="under-floor-gradient"></div>
+        <div class="dollar-stacks-area">
+            <div class="dollar-stack-your">
+                <div class="stack-area"></div>
+                <div class="price-label">Your price</div>
+                <div class="price-value price-value-your"></div>
+            </div>
+            <div class="dollar-stack-real">
+                <div class="price-label">Real price</div>
+                <div class="price-value price-value-real"></div>
+                <div class="stack-area"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        2012 Copyright © BIG DATA, REAL PRICES<br />
+        <a href="#">Terms and conditions</a> | <a href="#">Privacy policy</a>
+        <div class="glow-over-the-footer"></div>
+    </div>
+    <script type="text/javascript">
+    new MoneyStacksApp({
+        debug: {
+            findYouyPriceByRealPrice: function(realPrice) {
+                return realPrice * (((Math.random() * 6) + 2) / 10);
+            }
+        }
+    });
+    </script>
+</body>
+</html>

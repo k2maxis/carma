@@ -1,0 +1,39 @@
+.ui-autocomplete { /*problem in IE, so "left" positioning done in JS*/ /*     left: 378px !important; */
+    top: 203px !important;
+}
+
+.ui-autocomplete-sized {
+    overflow: auto !important;
+    /*     height: 250px !important; */
+    width: 835px !important;
+}
+
+.ui-autocomplete li a {
+    height: 25px;
+    display: block;
+}
+
+.ui-autocomplete li div {
+    float: left;
+    height: 25px;
+}
+
+.ui-autocomplete .item-0 {
+    margin-left: 5px;
+    width: 205px;
+    margin-right: 39px;
+}
+
+.ui-autocomplete .item-1 {
+    width: 220px;
+    margin-right: 37px;
+}
+
+.ui-autocomplete .item-2 {
+    width: 128px;
+    margin-right: 40px;
+}
+
+.ui-autocomplete .item-3 {
+    width: 125px;
+}
